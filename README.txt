@@ -14,7 +14,10 @@ https://zenn.dev/umi_mori/books/next-js-typescript/viewer/what-is-nextjs
 
 markdown
 Front matterを抜き出して、残りのコンテンツを表示するには、これが最良か。
+https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol2/spring-raining/index.html
+全体像がわかりにくいが、これも使えそう
 https://reffect.co.jp/react/nextjs-markdown-blog#gray-matter
+
 
 react-markdown
 https://github.com/remarkjs/react-markdown
