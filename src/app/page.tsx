@@ -10,7 +10,7 @@ import remarkRehype from 'remark-rehype'
 import rehypeStringify from 'rehype-stringify'
 
 export default function Home() {
-  const { data, content } = matter(contMD); // markdownコンテンツをfront matterと本文へ分解
+  const { data: fmat, content: mdcontent } = matter(contMD); // markdownコンテンツをfront matterと本文へ分解
   const [htmlContent, setHtmlContent] = useState('');
   useEffect(() => {
     (async () => {
@@ -18,14 +18,14 @@ export default function Home() {
         .use(remarkParse)
         .use(remarkRehype)
         .use(rehypeStringify)
-        .process(content);
+        .process(mdcontent);
       setHtmlContent(htmlObj.toString());
     })();
   }, []);
 
   return (
     <div className="container">
-      <h1 className="title is-1">{ data.title }</h1>
+      <h1 className="title is-1">{ fmat.title }</h1>
       <div dangerouslySetInnerHTML={{__html: htmlContent}}/>
     </div>
   );
