@@ -1,1 +1,6 @@
 @import url("@/../node_modules/bulma/css/bulma.min.css");
+/* Bulma */
+.my-hero {
+    background-size: cover;
+    background-position: center;
+}

@@ -25,7 +25,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body>{children}</body>
+      <body>
+        <section className="section">
+          <div className="container">
+            {children}
+          </div>
+        </section>
+      </body>
     </html>
   );
 }
